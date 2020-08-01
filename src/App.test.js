@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 // Component
 import App from "./App";
 import Navigation from "./components/navigation/navigation.component";
-import Card from "./components/card/card.component";
+import GettingStarted from "./components/getting-started/getting-started.component";
 
 // Helper functions
 import findByAttr from "./util/findByAtrr";
@@ -36,7 +36,7 @@ describe("App component has correct components inside of it", () => {
     expect(wrapper.contains(<Navigation />)).toBe(true);
   });
 
-  test("contains Card component", () => {
-    expect(wrapper.contains(<Card />)).toBe(true);
+  test("contains GettingStarted component", () => {
+    expect(wrapper.contains(<GettingStarted />)).toBe(true);
   });
 });
