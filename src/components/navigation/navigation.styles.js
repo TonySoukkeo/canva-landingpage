@@ -1,0 +1,31 @@
+import styled from "styled-components";
+
+export const Header = styled.header`
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0.5rem 2.5rem;
+`;
+
+export const Nav = styled.nav`
+  margin-left: 1.5rem;
+`;
+
+export const List = styled.ul`
+  display: flex;
+`;
+
+export const ListItem = styled.li`
+  cursor: pointer;
+  list-style-type: none;
+  margin-right: 1rem;
+  color: #fff;
+`;
+
+export const Logo = styled.img`
+  width: 4rem;
+`;
+
+export const ButtonContainer = styled.div`
+  margin-left: auto;
+`;
