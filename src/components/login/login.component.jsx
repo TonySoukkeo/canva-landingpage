@@ -12,6 +12,8 @@ const Login = () => {
       <Card.Body>
         <GoogleButton />
         <FacebookButton />
+
+        <span>or</span>
       </Card.Body>
     </Card>
   );
