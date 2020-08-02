@@ -13,5 +13,3 @@ export const ButtonText = styled.div`
   flex: 1;
   text-align: center;
 `;
-
-export const Icon = styled.div``;

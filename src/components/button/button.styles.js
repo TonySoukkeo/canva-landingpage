@@ -9,3 +9,8 @@ export const Button = styled.button`
   min-height: 45px;
   outline: none;
 `;
+
+export const ButtonText = styled.div`
+  flex: 1;
+  text-align: center;
+`;
