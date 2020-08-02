@@ -4,11 +4,7 @@ import React from "react";
 import { Header } from "./card-header.styles";
 
 const CardHeader = ({ children, ...otherProps }) => {
-  return (
-    <Header data-test="component-card-header" {...otherProps}>
-      {children}
-    </Header>
-  );
+  return <Header {...otherProps}>{children}</Header>;
 };
 
 export default CardHeader;

@@ -30,7 +30,9 @@ const GettingStarted = () => {
           margin: "8rem auto 0 auto",
         }}
       >
-        <Card.Header>Get started with Canva</Card.Header>
+        <Card.Header data-test="component-header">
+          Get started with Canva
+        </Card.Header>
         <Card.Body>
           <p>Sign up to discover the full power of Canva.</p>
           <br />

@@ -82,3 +82,29 @@ describe("contains all elements", () => {
     expect(signupLink.length).toBe(1);
   });
 });
+
+describe("tests input elements", () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = setup();
+  });
+
+  test("contains header", () => {
+    const header = findByAttr(wrapper, "component-header").dive();
+
+    expect(header.text().length).not.toBe(0);
+  });
+
+  test("'Email or cell' input field has type of text", () => {
+    const inputField = findByAttr(wrapper, "email-or-cell-input");
+
+    expect(inputField.props().type).toBe("text");
+  });
+
+  test("'password' input field has type of password", () => {
+    const passwordField = findByAttr(wrapper, "password-input");
+
+    expect(passwordField.props().type).toBe("password");
+  });
+});

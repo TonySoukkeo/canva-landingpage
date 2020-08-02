@@ -11,7 +11,9 @@ import Button from "../button/button.component";
 const Login = () => {
   return (
     <Card data-test="component-login">
-      <Card.Header>Log in to your account</Card.Header>
+      <Card.Header data-test="component-header">
+        Log in to your account
+      </Card.Header>
       <Card.Body>
         <GoogleButton
           data-test="google-login"
@@ -29,6 +31,7 @@ const Login = () => {
           <Form.InputGroup>
             <Form.Input
               data-test="email-or-cell-input"
+              type="text"
               placeholder="Email or Cell"
             />
           </Form.InputGroup>
@@ -36,6 +39,7 @@ const Login = () => {
           <Form.InputGroup>
             <Form.Input
               data-test="password-input"
+              type="password"
               placeholder="Email or Cell"
             />
           </Form.InputGroup>

@@ -23,6 +23,14 @@ test("renders out GettingStarted component without any issues", () => {
   expect(component.length).toBe(1);
 });
 
+test("contains header", () => {
+  const wrapper = setup();
+
+  const header = findByAttr(wrapper, "component-header").dive();
+
+  expect(header.text().length).not.toBe(0);
+});
+
 describe("contains necessary CTA buttons", () => {
   let wrapper;
 
