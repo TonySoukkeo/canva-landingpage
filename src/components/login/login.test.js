@@ -42,9 +42,14 @@ describe("contains all elements", () => {
   });
 
   test("contains log in with Apple button", () => {
-    const appleLogInBtn = findByAttr(wrapper, "apple-log-ion");
+    const appleLogInBtn = findByAttr(wrapper, "apple-login");
 
     expect(appleLogInBtn.length).toBe(1);
+  });
+
+  test("contains form element", () => {
+    const form = findByAttr(wrapper, "component-form");
+    expect(form.length).toBe(1);
   });
 
   test("contains text input for 'Email or Cell'", () => {
