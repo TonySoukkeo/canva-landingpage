@@ -1,11 +1,13 @@
 import React from "react";
 import CheckIcon from "@material-ui/icons/Check";
+import "./getting-started.styles.css";
 
 // Styled Components
 import { List, ListItem } from "./getting-started.styles";
 
 // Components
 import Card from "../card/card.component";
+import Button from "../button/button.component";
 
 const CheckIconStyles = {
   marginRight: ".4rem",
@@ -43,7 +45,27 @@ const GettingStarted = () => {
               problem!
             </ListItem>
           </List>
+
+          <br />
+
+          {/*** BUTTONS ***/}
+          <Button data-test="google-signup-btn" className="btn">
+            Sign up with Google
+          </Button>
+          <Button data-test="facebook-signup-btn" className="btn">
+            Sign up with Facebook
+          </Button>
+          <Button data-test="email-signup-btn" className="btn btn--blue">
+            Sign up with email
+          </Button>
         </Card.Body>
+
+        <Card.Footer>
+          Already signed up?{" "}
+          <button data-test="login-btn" className="login-btn">
+            Log in
+          </button>
+        </Card.Footer>
       </Card>
     </div>
   );

@@ -1,0 +1,35 @@
+.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: rgba(14, 19, 24, 0.7);
+  border-color: rgba(14, 19, 24, 0.15) !important;
+  transition: all 0.1s ease-in;
+}
+
+.btn,
+.login-btn {
+  font-weight: 400;
+}
+
+.btn:hover {
+  border-color: #333 !important;
+}
+
+.btn--blue {
+  color: #fff;
+  background-color: #00c4cc !important;
+}
+
+.login-btn {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #00c4cc;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+}
+
+.login-btn:hover {
+  color: #02dbe2;
+}
