@@ -1,7 +1,13 @@
 import React from "react";
 
-const Input = () => {
-  return <input data-test="component-input" />;
+const Input = ({ placeholder = "enter text here", ...otherProps }) => {
+  return (
+    <input
+      data-test="component-input"
+      placeholder={placeholder}
+      {...otherProps}
+    />
+  );
 };
 
 export default Input;
