@@ -1,4 +1,5 @@
 import React from "react";
+import "../button/button.styles.css";
 
 // Components
 import Card from "../card/card.component";
@@ -18,12 +19,18 @@ const Login = () => {
         <GoogleButton
           data-test="google-login"
           placeholder="Log in with Google"
+          className="btn"
         />
         <FacebookButton
           data-test="facebook-login"
           placeholder="Log in with Facebook"
+          className="btn"
         />
-        <AppleButton data-test="apple-login" placeholder="Log in with Apple" />
+        <AppleButton
+          data-test="apple-login"
+          placeholder="Log in with Apple"
+          className="btn"
+        />
 
         <span>or</span>
 

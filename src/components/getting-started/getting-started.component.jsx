@@ -1,6 +1,6 @@
 import React from "react";
 import CheckIcon from "@material-ui/icons/Check";
-import "./getting-started.styles.css";
+import "../button/button.styles.css";
 
 // Styled Components
 import { List, ListItem, ButtonText } from "./getting-started.styles";
