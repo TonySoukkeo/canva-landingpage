@@ -8,6 +8,7 @@ import FacebookButton from "../button/facebook-button/facebook-button.component"
 import AppleButton from "../button/apple-button/apple-button.component";
 import Form from "../form/form.component";
 import Button from "../button/button.component";
+import LineDecorator from "../line-decorator/line-decorator.component";
 
 const Login = () => {
   return (
@@ -32,7 +33,7 @@ const Login = () => {
           className="btn"
         />
 
-        <span>or</span>
+        <LineDecorator>or</LineDecorator>
 
         <Form data-test="component-form">
           <Form.InputGroup>
