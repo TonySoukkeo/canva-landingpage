@@ -3,6 +3,9 @@ import { shallow } from "enzyme";
 
 // Component
 import StartFlow from "./start-flow.component";
+import GettingStarted from "../getting-started/getting-started.component";
+import Login from "../login/login.component";
+import Signup from "../signup/signup.component";
 
 // Helper function
 import findByAttr from "../../util/findByAtrr";
@@ -25,30 +28,19 @@ test("renders start-flow component without any errors", () => {
 });
 
 describe("renders out correct displays", () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = setup();
+  test("renders out GettingStarted component if display props is 'default'", () => {
+    const wrapper = setup();
+    expect(wrapper.contains(<GettingStarted />)).toBe(true);
   });
 
-  test("renders out 'default display' if display props is 'default'", () => {
-    const component = findByAttr(wrapper, "component-default-display");
-
-    expect(component.length).toBe(1);
-  });
-
-  test("renders out 'login display' if display props is 'login'", () => {
+  test("renders out Login component if display props is 'login'", () => {
     const wrapper = setup({ display: "login" });
-    const component = findByAttr(wrapper, "component-login-display");
-
-    expect(component.length).toBe(1);
+    expect(wrapper.contains(<Login />)).toBe(true);
   });
 
-  test("renders out 'signup display' if display props is 'signup'", () => {
+  test("renders out Signup component if display props is 'signup'", () => {
     const wrapper = setup({ display: "signup" });
-    const component = findByAttr(wrapper, "component-signup-display");
-
-    expect(component.length).toBe(1);
+    expect(wrapper.contains(<Signup />)).toBe(true);
   });
 });
 

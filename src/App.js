@@ -8,14 +8,13 @@ import { Main } from "./App.styles";
 
 // Components
 import Navigation from "./components/navigation/navigation.component";
-import GettingStarted from "./components/getting-started/getting-started.component";
+import StartFlow from "./components/start-flow/start-flow.component";
 
 function App() {
   return (
     <Main data-test="component-app">
       <Navigation />
-
-      <GettingStarted />
+      <StartFlow data-test="component-start-flow" display="default" />
     </Main>
   );
 }

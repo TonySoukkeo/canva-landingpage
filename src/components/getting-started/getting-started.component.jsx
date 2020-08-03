@@ -24,12 +24,7 @@ const CheckIconStyles = {
 const GettingStarted = () => {
   return (
     <div data-test="component-getting-started">
-      <Card
-        style={{
-          position: "relative",
-          margin: "8rem auto 0 auto",
-        }}
-      >
+      <Card>
         <Card.Header data-test="component-header">
           Get started with Canva
         </Card.Header>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
-  position: relative;
-  margin: 8rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0;
 `;
