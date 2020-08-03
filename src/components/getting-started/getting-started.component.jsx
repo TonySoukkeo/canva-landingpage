@@ -1,6 +1,5 @@
 import React from "react";
 import CheckIcon from "@material-ui/icons/Check";
-import "../button/button.styles.css";
 
 // Styled Components
 import { List, ListItem, ButtonText } from "./getting-started.styles";
@@ -52,14 +51,19 @@ const GettingStarted = () => {
           <GoogleButton
             data-test="google-signup-btn"
             placeholder="Sign up with Google"
-            className="btn"
           />
           <FacebookButton
             data-test="facebook-signup-btn"
             placeholder="Sign up with Facebook"
-            className="btn"
           />
-          <Button data-test="email-signup-btn" className="btn btn--blue">
+          <Button
+            data-test="email-signup-btn"
+            width="100%"
+            backgroundColor="#00c4cc"
+            color="#fff"
+            border="none"
+            marginBottom="1rem"
+          >
             <ButtonText>Sign up with email</ButtonText>
           </Button>
         </Card.Body>

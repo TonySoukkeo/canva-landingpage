@@ -1,5 +1,4 @@
 import React from "react";
-import "../button/button.styles.css";
 
 // Styled Components
 import { ButtonText } from "../button/button.styles";
@@ -24,18 +23,12 @@ const Login = () => {
         <GoogleButton
           data-test="google-login"
           placeholder="Log in with Google"
-          className="btn"
         />
         <FacebookButton
           data-test="facebook-login"
           placeholder="Log in with Facebook"
-          className="btn"
         />
-        <AppleButton
-          data-test="apple-login"
-          placeholder="Log in with Apple"
-          className="btn"
-        />
+        <AppleButton data-test="apple-login" placeholder="Log in with Apple" />
 
         <LineDecorator style={{ marginBottom: "1rem" }}>or</LineDecorator>
 

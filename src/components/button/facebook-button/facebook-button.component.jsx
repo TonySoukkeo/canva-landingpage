@@ -1,14 +1,11 @@
 import React from "react";
 
-// Components
-import Button from "../button.component";
-
 // Styled Components
-import { ButtonText } from "../button.styles";
+import { ButtonText, ActionButton } from "../button.styles";
 
 const GoogleButton = ({ placeholder = "Enter text here", ...props }) => {
   return (
-    <Button {...props}>
+    <ActionButton {...props}>
       <div>
         <svg
           data-test="facebook-icon"
@@ -32,7 +29,7 @@ const GoogleButton = ({ placeholder = "Enter text here", ...props }) => {
         </svg>
       </div>
       <ButtonText data-test="placeholder">{placeholder}</ButtonText>
-    </Button>
+    </ActionButton>
   );
 };
 
