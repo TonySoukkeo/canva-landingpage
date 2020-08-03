@@ -1,6 +1,9 @@
 import React from "react";
 import "../button/button.styles.css";
 
+// Styled Components
+import { ButtonText } from "../button/button.styles";
+
 // Components
 import Card from "../card/card.component";
 import GoogleButton from "../button/google-button/google-button.component";
@@ -9,6 +12,7 @@ import AppleButton from "../button/apple-button/apple-button.component";
 import Form from "../form/form.component";
 import Button from "../button/button.component";
 import LineDecorator from "../line-decorator/line-decorator.component";
+import Link from "../link/link.component";
 
 const Login = () => {
   return (
@@ -33,7 +37,7 @@ const Login = () => {
           className="btn"
         />
 
-        <LineDecorator>or</LineDecorator>
+        <LineDecorator style={{ marginBottom: "1rem" }}>or</LineDecorator>
 
         <Form data-test="component-form">
           <Form.InputGroup>
@@ -48,20 +52,34 @@ const Login = () => {
             <Form.Input
               data-test="password-input"
               type="password"
-              placeholder="Email or Cell"
+              placeholder="Password"
             />
           </Form.InputGroup>
 
-          <Button data-test="login-button" type="submit">
-            Log in
+          <Button
+            data-test="login-button"
+            type="submit"
+            className="btn btn--blue"
+          >
+            <ButtonText>Log in</ButtonText>
           </Button>
         </Form>
       </Card.Body>
 
       <Card.Footer>
-        <span data-test="forgot-password-link">Forgot password?</span>
+        <Link
+          data-test="forgot-password-link"
+          style={{
+            marginBottom: ".5rem",
+          }}
+        >
+          Forgot password?
+        </Link>
         <p>
-          New to Canva? <span data-test="signup-link">Sign up</span>
+          New to Canva?{" "}
+          <Link data-test="signup-link" color="#00c4cc">
+            Sign up
+          </Link>
         </p>
       </Card.Footer>
     </Card>

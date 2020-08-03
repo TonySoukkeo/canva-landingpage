@@ -14,7 +14,7 @@ function App() {
   return (
     <Main data-test="component-app">
       <Navigation />
-      <StartFlow data-test="component-start-flow" display="login" />
+      <StartFlow data-test="component-start-flow" display="default" />
     </Main>
   );
 }

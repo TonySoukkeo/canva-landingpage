@@ -10,6 +10,7 @@ import Card from "../card/card.component";
 import Button from "../button/button.component";
 import GoogleButton from "../button/google-button/google-button.component";
 import FacebookButton from "../button/facebook-button/facebook-button.component";
+import Link from "../link/link.component";
 
 const CheckIconStyles = {
   marginRight: ".4rem",
@@ -65,9 +66,9 @@ const GettingStarted = () => {
 
         <Card.Footer>
           Already signed up?{" "}
-          <button data-test="login-btn" className="login-btn">
+          <Link data-test="login-btn" color="#00c4cc">
             Log in
-          </button>
+          </Link>
         </Card.Footer>
       </Card>
     </div>
