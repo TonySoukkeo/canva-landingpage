@@ -1,10 +1,8 @@
 import React from "react";
 
 // Styled components
-import { Button as Btn } from "./button.styles";
+import { Button } from "./button.styles";
 
-const Button = ({ children, ...otherProps }) => {
-  return <Btn {...otherProps}>{children}</Btn>;
+export default ({ children, ...otherProps }) => {
+  return <Button {...otherProps}>{children}</Button>;
 };
-
-export default Button;

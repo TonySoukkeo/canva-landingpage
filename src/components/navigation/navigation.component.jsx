@@ -17,6 +17,9 @@ import Button from "../button/button.component";
 const buttonStyle = {
   minWidth: "81.53px",
   color: "#fff",
+  minHeight: "auto",
+  paddingTop: ".7rem",
+  paddingBottom: ".7rem",
 };
 
 /**
