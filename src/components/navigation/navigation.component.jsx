@@ -14,6 +14,11 @@ import {
 // Custom components
 import Button from "../button/button.component";
 
+const buttonStyle = {
+  minWidth: "81.53px",
+  color: "#fff",
+};
+
 /**
  * Renders out main navigation component
  * @function Navigation
@@ -34,10 +39,26 @@ const Navigation = () => {
       </Nav>
 
       <ButtonContainer>
-        <Button data-test="log-in-btn" style={{ marginRight: "1rem" }}>
+        <Button
+          data-test="log-in-btn"
+          style={{
+            ...buttonStyle,
+            marginRight: "1rem",
+            borderColor: "#fff",
+            borderWidth: "1.6px",
+          }}
+        >
           Log in
         </Button>
-        <Button data-test="sign-up-btn">Sign up</Button>
+        <Button
+          data-test="sign-up-btn"
+          style={{
+            ...buttonStyle,
+            backgroundColor: "#00c4cc",
+          }}
+        >
+          Sign up
+        </Button>
       </ButtonContainer>
     </Header>
   );
