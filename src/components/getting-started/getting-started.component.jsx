@@ -16,6 +16,14 @@ const CheckIconStyles = {
   color: "#00c4cc",
 };
 
+const emailSignUpButtonStyles = {
+  width: "100%",
+  backgroundColor: "#00c4cc",
+  color: "#fff",
+  border: "none",
+  marginBottom: "1rem",
+};
+
 /**
  * Default card display that renders out CTA buttons and default information
  * @function GettingStarted
@@ -56,14 +64,7 @@ const GettingStarted = () => {
             data-test="facebook-signup-btn"
             placeholder="Sign up with Facebook"
           />
-          <Button
-            data-test="email-signup-btn"
-            width="100%"
-            backgroundColor="#00c4cc"
-            color="#fff"
-            border="none"
-            marginBottom="1rem"
-          >
+          <Button data-test="email-signup-btn" {...emailSignUpButtonStyles}>
             <ButtonText>Sign up with email</ButtonText>
           </Button>
         </Card.Body>
