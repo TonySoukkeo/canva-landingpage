@@ -35,9 +35,9 @@ describe("App component has correct components inside of it", () => {
     expect(wrapper.contains(<Navigation />)).toBe(true);
   });
 
-  test("contains StartFlow component", () => {
-    const component = findByAttr(wrapper, "component-start-flow");
+  test("contains CenterWrap component", () => {
+    const centerWrap = findByAttr(wrapper, "component-center-wrap");
 
-    expect(component.length).toBe(1);
+    expect(centerWrap.length).toBe(1);
   });
 });

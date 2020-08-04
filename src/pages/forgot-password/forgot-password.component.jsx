@@ -1,10 +1,10 @@
 import React from "react";
 
 // Components
-import Card from "../card/card.component";
-import Form from "../form/form.component";
-import Button from "../button/button.component";
-import Link from "../link/link.component";
+import Card from "../../components/card/card.component";
+import Form from "../../components/form/form.component";
+import Button from "../../components/button/button.component";
+import Link from "../../components/link/link.component";
 
 const ForgotPassword = () => {
   return (

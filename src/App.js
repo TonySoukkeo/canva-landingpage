@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 
 // Css styles
 import "./App.css";
@@ -8,13 +9,22 @@ import { Main } from "./App.styles";
 
 // Components
 import Navigation from "./components/navigation/navigation.component";
-import StartFlow from "./components/start-flow/start-flow.component";
+import GettingStarted from "./pages/getting-started/getting-started.component";
+import Login from "./components/login/login.component";
+import Signup from "./components/signup/signup.component";
+import CenterWrap from "./components/center-wrap/center-wrap.component";
 
 function App() {
   return (
     <Main data-test="component-app">
       <Navigation />
-      <StartFlow data-test="component-start-flow" display="login" />
+      <CenterWrap data-test="component-center-wrap" marginTop="3rem">
+        <Switch>
+          <Route path="/" component={GettingStarted} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/signup" exact component={Signup} />
+        </Switch>
+      </CenterWrap>
     </Main>
   );
 }

@@ -5,11 +5,11 @@ import CheckIcon from "@material-ui/icons/Check";
 import { List, ListItem, ButtonText } from "./getting-started.styles";
 
 // Components
-import Card from "../card/card.component";
-import Button from "../button/button.component";
-import GoogleButton from "../button/google-button/google-button.component";
-import FacebookButton from "../button/facebook-button/facebook-button.component";
-import Link from "../link/link.component";
+import Card from "../../components/card/card.component";
+import Button from "../../components/button/button.component";
+import GoogleButton from "../../components/button/google-button/google-button.component";
+import FacebookButton from "../../components/button/facebook-button/facebook-button.component";
+import Link from "../../components/link/link.component";
 
 const CheckIconStyles = {
   marginRight: ".4rem",
