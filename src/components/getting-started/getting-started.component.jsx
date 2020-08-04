@@ -21,7 +21,6 @@ const emailSignUpButtonStyles = {
   backgroundColor: "#00c4cc",
   color: "#fff",
   border: "none",
-  marginBottom: "1rem",
 };
 
 /**

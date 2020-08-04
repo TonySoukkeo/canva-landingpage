@@ -13,7 +13,28 @@ import Button from "../button/button.component";
 import LineDecorator from "../line-decorator/line-decorator.component";
 import Link from "../link/link.component";
 
+// Helper functions
+import isEmail from "../../util/isEmail";
+
+// Custom hooks
+import useForm from "../../hooks/useForm";
+
+const initialInputValues = {
+  emailOrCell: {
+    value: "",
+    focused: false,
+  },
+  password: {
+    value: "",
+    focused: false,
+  },
+};
+
 const Login = () => {
+  const { inputValues, handleOnChange, handleSubmit } = useForm(
+    initialInputValues
+  );
+
   return (
     <Card data-test="component-login">
       <Card.Header data-test="component-header">
@@ -32,12 +53,18 @@ const Login = () => {
 
         <LineDecorator style={{ marginBottom: "1rem" }}>or</LineDecorator>
 
-        <Form data-test="component-form">
+        <Form data-test="component-form" onSubmit={handleSubmit}>
           <Form.InputGroup>
             <Form.Input
               data-test="email-or-cell-input"
               type="text"
               placeholder="Email or Cell"
+              onChange={handleOnChange}
+              value={inputValues.emailOrCell.value}
+              name="emailOrCell"
+              focused={inputValues.emailOrCell.focused}
+              valid={isEmail(inputValues.emailOrCell.value)}
+              invalidText="Please enter a valid email address or cell phone number."
             />
           </Form.InputGroup>
 
@@ -46,6 +73,12 @@ const Login = () => {
               data-test="password-input"
               type="password"
               placeholder="Password"
+              onChange={handleOnChange}
+              value={inputValues.password.value}
+              name="password"
+              focused={inputValues.password.focused}
+              valid={inputValues.password.value.length > 10}
+              invalidText="Please enter your password."
             />
           </Form.InputGroup>
 
@@ -53,6 +86,7 @@ const Login = () => {
             data-test="login-button"
             type="submit"
             className="btn btn--blue"
+            width="100%"
           >
             <ButtonText>Log in</ButtonText>
           </Button>

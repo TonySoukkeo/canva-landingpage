@@ -107,4 +107,38 @@ describe("tests input elements", () => {
 
     expect(passwordField.props().type).toBe("password");
   });
+
+  test("'Email or Cell' input value updates correctly on 'onChange'", () => {
+    let input;
+    const inputValue = "test@gmail.com";
+    const inputName = "emailOrCell";
+
+    input = findByAttr(wrapper, "email-or-cell-input");
+    input.simulate("change", {
+      target: {
+        name: inputName,
+        value: inputValue,
+      },
+    });
+    input = findByAttr(wrapper, "email-or-cell-input");
+
+    expect(input.props().value).toBe(inputValue);
+  });
+
+  test("'Password' input value updates correctly on 'onChange'", () => {
+    let input;
+    const inputValue = "password123";
+    const inputName = "password";
+
+    input = findByAttr(wrapper, "password-input");
+    input.simulate("change", {
+      target: {
+        name: inputName,
+        value: inputValue,
+      },
+    });
+    input = findByAttr(wrapper, "password-input");
+
+    expect(input.props().value).toBe(inputValue);
+  });
 });

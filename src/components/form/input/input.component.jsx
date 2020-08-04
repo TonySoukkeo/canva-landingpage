@@ -1,10 +1,31 @@
-import React from "react";
+import React, { memo, Fragment } from "react";
 
 // Styled components
-import { Input as InputBox } from "./input.styles";
+import { Input, InvalidText } from "./input.styles";
 
-const Input = ({ placeholder = "enter text here", ...otherProps }) => {
-  return <InputBox placeholder={placeholder} {...otherProps} />;
-};
+export default memo(
+  ({
+    placeholder = "enter text here",
+    valid,
+    focused,
+    name,
+    invalidText = "",
+    ...otherProps
+  }) => {
+    return (
+      <Fragment>
+        <Input
+          focused={focused}
+          valid={valid}
+          placeholder={placeholder}
+          name={name}
+          {...otherProps}
+        />
 
-export default Input;
+        {!valid && invalidText.length && focused ? (
+          <InvalidText>{invalidText}</InvalidText>
+        ) : null}
+      </Fragment>
+    );
+  }
+);

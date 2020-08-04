@@ -5,4 +5,5 @@ export const Body = styled.div`
   font-weight: 400;
   text-align: left;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 `;

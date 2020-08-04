@@ -4,8 +4,12 @@ import React from "react";
 import InputGroup from "./input-group/input-group.component";
 import Input from "./input/input.component";
 
-const Form = ({ children, ...otherProps }) => {
-  return <form {...otherProps}>{children}</form>;
+const Form = ({ children, handleSubmit, initialinput, ...otherProps }) => {
+  return (
+    <form onSubmit={handleSubmit} {...otherProps}>
+      {children}
+    </form>
+  );
 };
 
 Form.Input = Input;
