@@ -30,52 +30,50 @@ const emailSignUpButtonStyles = {
  */
 const GettingStarted = () => {
   return (
-    <div data-test="component-getting-started">
-      <Card>
-        <Card.Header data-test="component-header">
-          Get started with Canva
-        </Card.Header>
-        <Card.Body>
-          <p>Sign up to discover the full power of Canva.</p>
-          <br />
-          <List>
-            <ListItem>
-              <CheckIcon style={CheckIconStyles} /> Free Forever
-            </ListItem>
-            <ListItem>
-              <CheckIcon style={CheckIconStyles} /> Create stuning designs and
-              documents in minutes
-            </ListItem>
-            <ListItem>
-              <CheckIcon style={CheckIconStyles} /> No design experience? No
-              problem!
-            </ListItem>
-          </List>
+    <Card data-test="component-getting-started">
+      <Card.Header data-test="component-header">
+        Get started with Canva
+      </Card.Header>
+      <Card.Body>
+        <p>Sign up to discover the full power of Canva.</p>
+        <br />
+        <List>
+          <ListItem>
+            <CheckIcon style={CheckIconStyles} /> Free Forever
+          </ListItem>
+          <ListItem>
+            <CheckIcon style={CheckIconStyles} /> Create stuning designs and
+            documents in minutes
+          </ListItem>
+          <ListItem>
+            <CheckIcon style={CheckIconStyles} /> No design experience? No
+            problem!
+          </ListItem>
+        </List>
 
-          <br />
+        <br />
 
-          {/*** BUTTONS ***/}
-          <GoogleButton
-            data-test="google-signup-btn"
-            placeholder="Sign up with Google"
-          />
-          <FacebookButton
-            data-test="facebook-signup-btn"
-            placeholder="Sign up with Facebook"
-          />
-          <Button data-test="email-signup-btn" {...emailSignUpButtonStyles}>
-            <ButtonText>Sign up with email</ButtonText>
-          </Button>
-        </Card.Body>
+        {/*** BUTTONS ***/}
+        <GoogleButton
+          data-test="google-signup-btn"
+          placeholder="Sign up with Google"
+        />
+        <FacebookButton
+          data-test="facebook-signup-btn"
+          placeholder="Sign up with Facebook"
+        />
+        <Button data-test="email-signup-btn" {...emailSignUpButtonStyles}>
+          <ButtonText>Sign up with email</ButtonText>
+        </Button>
+      </Card.Body>
 
-        <Card.Footer>
-          Already signed up?{" "}
-          <Link data-test="login-btn" color="#00c4cc">
-            Log in
-          </Link>
-        </Card.Footer>
-      </Card>
-    </div>
+      <Card.Footer>
+        Already signed up?{" "}
+        <Link data-test="login-btn" color="#00c4cc">
+          Log in
+        </Link>
+      </Card.Footer>
+    </Card>
   );
 };
 
