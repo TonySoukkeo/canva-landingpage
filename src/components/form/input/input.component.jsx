@@ -15,6 +15,7 @@ export default memo(
     return (
       <Fragment>
         <Input
+          data-test="component-input"
           focused={focused}
           valid={valid}
           placeholder={placeholder}
@@ -23,7 +24,7 @@ export default memo(
         />
 
         {!valid && invalidText.length && focused ? (
-          <InvalidText>{invalidText}</InvalidText>
+          <InvalidText data-test="invalid-text">{invalidText}</InvalidText>
         ) : null}
       </Fragment>
     );
