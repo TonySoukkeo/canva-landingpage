@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
-export const Button = styled.button(({ ...otherProps }) => ({
-  cursor: "pointer",
-  borderWidth: "1px",
-  borderStyle: "solid",
-  backgroundColor: "transparent",
-  padding: "0.3rem 1rem",
-  borderRadius: ".3rem",
-  minHeight: "45px",
-  outline: "none",
-  ...otherProps,
-}));
+export const Button = styled.button(
+  ({
+    disabled,
+    backgroundColor = "transparent",
+    color = "#fff",
+    ...otherProps
+  }) => ({
+    cursor: disabled ? "not-allowed" : "pointer",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    backgroundColor: disabled ? "rgba(14,19,24,.15)" : backgroundColor,
+    padding: "0.3rem 1rem",
+    borderRadius: ".3rem",
+    minHeight: "45px",
+    outline: "none",
+    color: disabled ? "rgba(14,19,24,.45)" : color,
+    ...otherProps,
+  })
+);
 
 export const ButtonText = styled.div`
   flex: 1;

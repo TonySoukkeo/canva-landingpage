@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 // Styled Components
 import { ButtonText } from "../button/button.styles";
@@ -35,6 +35,10 @@ const Login = () => {
     initialInputValues
   );
 
+  const checkEmail = useMemo(() => isEmail(inputValues.emailOrCell.value), [
+    inputValues.emailOrCell.value,
+  ]);
+
   return (
     <Card data-test="component-login">
       <Card.Header data-test="component-header">
@@ -63,7 +67,7 @@ const Login = () => {
               value={inputValues.emailOrCell.value}
               name="emailOrCell"
               focused={inputValues.emailOrCell.focused}
-              valid={isEmail(inputValues.emailOrCell.value)}
+              valid={checkEmail}
               invalidText="Please enter a valid email address or cell phone number."
             />
           </Form.InputGroup>
@@ -85,8 +89,10 @@ const Login = () => {
           <Button
             data-test="login-button"
             type="submit"
-            className="btn btn--blue"
+            backgroundColor="#00c4cc"
+            borderStyle="none"
             width="100%"
+            disabled={!checkEmail || inputValues.password.value.length < 10}
           >
             <ButtonText>Log in</ButtonText>
           </Button>
