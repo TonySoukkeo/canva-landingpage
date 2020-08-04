@@ -7,7 +7,6 @@ const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
  * @return {Boolean}
  */
 const isEmail = (value) => {
-  console.log("check email", value);
   return emailRegex.test(value);
 };
 

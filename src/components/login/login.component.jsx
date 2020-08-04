@@ -14,7 +14,7 @@ import LineDecorator from "../line-decorator/line-decorator.component";
 import Link from "../link/link.component";
 
 // Helper functions
-import isEmail from "../../util/isEmail";
+import isEmail from "../../util/isEmail/isEmail";
 
 // Custom hooks
 import useForm from "../../hooks/useForm";
