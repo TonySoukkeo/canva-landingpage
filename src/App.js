@@ -20,7 +20,7 @@ function App() {
       <Navigation />
       <CenterWrap data-test="component-center-wrap" marginTop="3rem">
         <Switch>
-          <Route path="/" component={GettingStarted} />
+          <Route path="/" exact component={GettingStarted} />
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
         </Switch>

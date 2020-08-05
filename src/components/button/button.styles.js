@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Button = styled.button(
+// Mixins
+const button = css(
   ({
     disabled,
     backgroundColor = "transparent",
@@ -19,6 +21,16 @@ export const Button = styled.button(
     ...otherProps,
   })
 );
+
+// Custom styled components
+export const Button = styled.button`
+  ${button}
+`;
+
+export const ButtonLink = styled(Link)`
+  ${button}
+  text-decoration: none
+`;
 
 export const ButtonText = styled.div`
   flex: 1;

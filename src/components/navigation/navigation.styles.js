@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
+
+// Mixins
+const LogoStyle = css(({ ...otherProps }) => ({
+  width: "4rem",
+  ...otherProps,
+}));
 
 export const Header = styled.header`
   display: flex;
@@ -23,7 +30,11 @@ export const ListItem = styled.li`
 `;
 
 export const Logo = styled.img`
-  width: 4rem;
+  ${LogoStyle}
+`;
+
+export const LogoLinkWrapper = styled(Link)`
+  display: flex;
 `;
 
 export const ButtonContainer = styled.div`

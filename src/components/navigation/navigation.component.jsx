@@ -8,11 +8,12 @@ import {
   List,
   ListItem,
   Logo,
+  LogoLinkWrapper,
   ButtonContainer,
 } from "./navigation.styles";
 
-// Custom components
-import Button from "../button/button.component";
+// Custom Component
+import ButtonLink from "../button/button-link/button-link.component";
 
 const buttonStyle = {
   minWidth: "81.53px",
@@ -30,7 +31,9 @@ const buttonStyle = {
 const Navigation = () => {
   return (
     <Header data-test="main-navigation">
-      <Logo data-test="main-logo" src={CanvaLogo} />
+      <LogoLinkWrapper to="/">
+        <Logo data-test="main-logo" src={CanvaLogo} />
+      </LogoLinkWrapper>
       <Nav>
         <List>
           <ListItem data-test="home-link">Home</ListItem>
@@ -42,26 +45,25 @@ const Navigation = () => {
       </Nav>
 
       <ButtonContainer>
-        <Button
+        <ButtonLink
           data-test="log-in-btn"
-          style={{
-            ...buttonStyle,
-            marginRight: "1rem",
-            borderColor: "#fff",
-            borderWidth: "1.6px",
-          }}
+          to="/login"
+          marginRight="1rem"
+          borderColor="#fff"
+          borderWidth="1.6px"
+          {...buttonStyle}
         >
           Log in
-        </Button>
-        <Button
+        </ButtonLink>
+        <ButtonLink
           data-test="sign-up-btn"
-          style={{
-            ...buttonStyle,
-            backgroundColor: "#00c4cc",
-          }}
+          to="/signup"
+          backgroundColor="#00c4cc"
+          border="none"
+          {...buttonStyle}
         >
           Sign up
-        </Button>
+        </ButtonLink>
       </ButtonContainer>
     </Header>
   );
