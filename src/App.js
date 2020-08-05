@@ -10,8 +10,8 @@ import { Main } from "./App.styles";
 // Components
 import Navigation from "./components/navigation/navigation.component";
 import GettingStarted from "./pages/getting-started/getting-started.component";
-import Login from "./components/login/login.component";
-import Signup from "./components/signup/signup.component";
+import Login from "./pages/login/login.component";
+import Signup from "./pages/signup/signup.component";
 import CenterWrap from "./components/center-wrap/center-wrap.component";
 
 function App() {

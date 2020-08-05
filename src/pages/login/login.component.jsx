@@ -1,17 +1,17 @@
 import React, { useMemo } from "react";
 
 // Styled Components
-import { ButtonText } from "../button/button.styles";
+import { ButtonText } from "../../components/button/button.styles";
 
 // Components
-import Card from "../card/card.component";
-import GoogleButton from "../button/google-button/google-button.component";
-import FacebookButton from "../button/facebook-button/facebook-button.component";
-import AppleButton from "../button/apple-button/apple-button.component";
-import Form from "../form/form.component";
-import Button from "../button/button.component";
-import LineDecorator from "../line-decorator/line-decorator.component";
-import Link from "../link/link.component";
+import Card from "../../components/card/card.component";
+import GoogleButton from "../../components/button/google-button/google-button.component";
+import FacebookButton from "../../components/button/facebook-button/facebook-button.component";
+import AppleButton from "../../components/button/apple-button/apple-button.component";
+import Form from "../../components/form/form.component";
+import Button from "../../components/button/button.component";
+import LineDecorator from "../../components/line-decorator/line-decorator.component";
+import Link from "../../components/link/link.component";
 
 // Helper functions
 import isEmail from "../../util/isEmail/isEmail";

@@ -1,9 +1,9 @@
 import React from "react";
 
 // Components
-import Form from "../form/form.component";
-import Card from "../card/card.component";
-import Button from "../button/button.component";
+import Form from "../../components/form/form.component";
+import Card from "../../components/card/card.component";
+import Button from "../../components/button/button.component";
 
 const Signup = () => {
   return (
