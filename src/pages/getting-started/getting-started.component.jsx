@@ -6,7 +6,7 @@ import { List, ListItem, ButtonText } from "./getting-started.styles";
 
 // Components
 import Card from "../../components/card/card.component";
-import Button from "../../components/button/button.component";
+import ButtonLink from "../../components/button/button-link/button-link.component";
 import GoogleButton from "../../components/button/google-button/google-button.component";
 import FacebookButton from "../../components/button/facebook-button/facebook-button.component";
 import Link from "../../components/link/link.component";
@@ -62,14 +62,18 @@ const GettingStarted = () => {
           data-test="facebook-signup-btn"
           placeholder="Sign up with Facebook"
         />
-        <Button data-test="email-signup-btn" {...emailSignUpButtonStyles}>
-          <ButtonText>Sign up with email</ButtonText>
-        </Button>
+        <ButtonLink
+          data-test="email-signup-btn"
+          to="/signup"
+          {...emailSignUpButtonStyles}
+        >
+          Sign up with email
+        </ButtonLink>
       </Card.Body>
 
       <Card.Footer>
         Already signed up?{" "}
-        <Link data-test="login-btn" color="#00c4cc">
+        <Link data-test="login-btn" to="/login" color="#00c4cc">
           Log in
         </Link>
       </Card.Footer>

@@ -23,18 +23,22 @@ const button = css(
 );
 
 // Custom styled components
-export const Button = styled.button`
-  ${button}
-`;
 
 export const ButtonLink = styled(Link)`
   ${button}
-  text-decoration: none
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 `;
 
 export const ButtonText = styled.div`
   flex: 1;
   text-align: center;
+`;
+
+export const Button = styled.button`
+  ${button}
 `;
 
 export const ActionButton = styled(Button)(

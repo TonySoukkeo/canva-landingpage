@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link as RouterLink } from "react-router-dom";
 
-export const Link = styled.button(({ hoverColor, ...otherProps }) => ({
+export const Link = styled(RouterLink)(({ hoverColor, ...otherProps }) => ({
   cursor: "pointer",
   color: "rgba(14,19,24,.7)",
   textDecoration: "underline",

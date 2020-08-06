@@ -38,5 +38,6 @@ export const LogoLinkWrapper = styled(Link)`
 `;
 
 export const ButtonContainer = styled.div`
+  display: flex;
   margin-left: auto;
 `;
