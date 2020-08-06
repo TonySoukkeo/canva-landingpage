@@ -83,7 +83,7 @@ const Signup = () => {
               placeholder="Password"
               onChange={handleOnChange}
               name="password"
-              valid={inputValues.password.value.length > 10}
+              valid={inputValues.password.value.length >= 10}
               focused={inputValues.password.focused}
               invalidText="Password must be at least 10 characters long."
             />

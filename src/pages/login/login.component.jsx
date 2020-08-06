@@ -83,7 +83,7 @@ const Login = () => {
               value={inputValues.password.value}
               name="password"
               focused={inputValues.password.focused}
-              valid={inputValues.password.value.length > 10}
+              valid={inputValues.password.value.length >= 10}
               invalidText="Please enter your password."
             />
           </Form.InputGroup>
@@ -112,7 +112,7 @@ const Login = () => {
         </Link>
         <p>
           New to Canva?{" "}
-          <Link data-test="signup-link" color="#00c4cc">
+          <Link data-test="signup-link" to="/signup" color="#00c4cc">
             Sign up
           </Link>
         </p>
