@@ -19,8 +19,6 @@ const buttonStyle = {
   minWidth: "81.53px",
   color: "#fff",
   minHeight: "auto",
-  paddingTop: ".7rem",
-  paddingBottom: ".7rem",
 };
 
 /**
@@ -58,9 +56,12 @@ const Navigation = () => {
         <ButtonLink
           data-test="sign-up-btn"
           to="/signup"
-          backgroundColor="#00c4cc"
-          border="none"
-          {...buttonStyle}
+          style={{
+            ...buttonStyle,
+            backgroundColor: "rgb(239, 239, 239)",
+            border: "none",
+            color: "#0e1318",
+          }}
         >
           Sign up
         </ButtonLink>
