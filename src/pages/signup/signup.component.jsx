@@ -5,6 +5,7 @@ import Form from "../../components/form/form.component";
 import Card from "../../components/card/card.component";
 import Button from "../../components/button/button.component";
 import Link from "../../components/link/link.component";
+import BackButton from "../../components/button/back-btn/back-btn.component";
 
 // Styled Components
 import { ButtonText } from "../../components/button/button.styles";
@@ -42,6 +43,7 @@ const Signup = () => {
   return (
     <Card data-test="component-signup">
       <Card.Header data-test="component-header">
+        <BackButton />
         Create your account
       </Card.Header>
       <Card.Body>

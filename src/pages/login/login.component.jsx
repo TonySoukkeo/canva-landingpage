@@ -12,6 +12,7 @@ import Form from "../../components/form/form.component";
 import Button from "../../components/button/button.component";
 import LineDecorator from "../../components/line-decorator/line-decorator.component";
 import Link from "../../components/link/link.component";
+import BackButton from "../../components/button/back-btn/back-btn.component";
 
 // Helper functions
 import isEmail from "../../util/isEmail/isEmail";
@@ -42,6 +43,7 @@ const Login = () => {
   return (
     <Card data-test="component-login">
       <Card.Header data-test="component-header">
+        <BackButton />
         Log in to your account
       </Card.Header>
       <Card.Body>

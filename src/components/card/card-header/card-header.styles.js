@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Header = styled.h1`
+  display: flex;
+  align-items: center;
   text-align: left;
   color: black;
   font-weight: 700;
