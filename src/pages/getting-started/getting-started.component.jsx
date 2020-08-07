@@ -2,7 +2,7 @@ import React from "react";
 import CheckIcon from "@material-ui/icons/Check";
 
 // Styled Components
-import { List, ListItem, ButtonText } from "./getting-started.styles";
+import { List, ListItem } from "./getting-started.styles";
 
 // Components
 import Card from "../../components/card/card.component";

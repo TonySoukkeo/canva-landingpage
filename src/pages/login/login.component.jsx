@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useRouteMatch, Route, Switch } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
 
 // Styled Components
 import { ButtonText } from "../../components/button/button.styles";
@@ -14,7 +14,6 @@ import Button from "../../components/button/button.component";
 import LineDecorator from "../../components/line-decorator/line-decorator.component";
 import Link from "../../components/link/link.component";
 import BackButton from "../../components/button/back-btn/back-btn.component";
-import ForgotPassword from "../forgot-password/forgot-password.component";
 
 // Helper functions
 import isEmail from "../../util/isEmail/isEmail";
