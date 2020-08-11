@@ -25,7 +25,7 @@ const ForgotPassword = () => {
           <Form.InputGroup>
             <Form.Input
               data-test="component-input"
-              placeHolder="Email or Cell"
+              placeholder="Email or Cell"
               name="emailOrCell"
             />
           </Form.InputGroup>
