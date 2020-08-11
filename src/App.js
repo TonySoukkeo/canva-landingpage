@@ -1,15 +1,12 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
+import Route from "./components/route/route.component";
 
 // Css styles
 import "./App.css";
 
 // Styled Components
 import { Main } from "./App.styles";
-
-// Components
-import Navigation from "./components/navigation/navigation.component";
-import CenterWrap from "./components/center-wrap/center-wrap.component";
 
 // Pages
 import GettingStarted from "./pages/getting-started/getting-started.component";
@@ -20,15 +17,12 @@ import NotFound from "./pages/not-found/not-found.component";
 function App() {
   return (
     <Main data-test="component-app">
-      <Navigation />
-      <CenterWrap data-test="component-center-wrap" marginTop="3rem">
-        <Switch>
-          <Route exact path="/" component={GettingStarted} />
-          <Route path="/login" component={LoginContainer} />
-          <Route exact path="/signup" component={Signup} />
-          <Route component={NotFound} />
-        </Switch>
-      </CenterWrap>
+      <Switch>
+        <Route exact path="/" Component={GettingStarted} navigation />
+        <Route path="/login" Component={LoginContainer} navigation />
+        <Route exact path="/signup" Component={Signup} navigation />
+        <Route Component={NotFound} />
+      </Switch>
     </Main>
   );
 }
