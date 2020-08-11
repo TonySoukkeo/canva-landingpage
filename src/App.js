@@ -9,10 +9,13 @@ import { Main } from "./App.styles";
 
 // Components
 import Navigation from "./components/navigation/navigation.component";
+import CenterWrap from "./components/center-wrap/center-wrap.component";
+
+// Pages
 import GettingStarted from "./pages/getting-started/getting-started.component";
 import LoginContainer from "./pages/login/login-container.component";
 import Signup from "./pages/signup/signup.component";
-import CenterWrap from "./components/center-wrap/center-wrap.component";
+import NotFound from "./pages/not-found/not-found.component";
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route exact path="/" component={GettingStarted} />
           <Route path="/login" component={LoginContainer} />
           <Route exact path="/signup" component={Signup} />
+          <Route component={NotFound} />
         </Switch>
       </CenterWrap>
     </Main>
