@@ -20,8 +20,7 @@ const Route = ({ Component, path, navigation, ...otherProps }) => {
       component={() => (
         <React.Fragment>
           {navigation ? <Navigation /> : null}
-
-          <CenterWrap data-test="component-center-wrap" marginTop="3rem">
+          <CenterWrap data-test="component-center-wrap">
             <Component />
           </CenterWrap>
         </React.Fragment>

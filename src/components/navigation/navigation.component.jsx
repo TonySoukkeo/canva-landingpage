@@ -1,5 +1,4 @@
 import React from "react";
-import CanvaLogo from "../../assets/logo.png";
 
 // styled-components
 import {
@@ -7,13 +6,12 @@ import {
   Nav,
   List,
   ListItem,
-  Logo,
-  LogoLinkWrapper,
   ButtonContainer,
 } from "./navigation.styles";
 
 // Custom Component
 import ButtonLink from "../button/button-link/button-link.component";
+import Logo from "../logo/logo.component";
 
 const buttonStyle = {
   minWidth: "81.53px",
@@ -29,9 +27,7 @@ const buttonStyle = {
 const Navigation = () => {
   return (
     <Header data-test="main-navigation">
-      <LogoLinkWrapper to="/">
-        <Logo data-test="main-logo" src={CanvaLogo} />
-      </LogoLinkWrapper>
+      <Logo to="/" />
       <Nav>
         <List>
           <ListItem data-test="home-link">Home</ListItem>
