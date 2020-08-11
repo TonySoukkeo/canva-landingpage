@@ -23,21 +23,3 @@ test("renders App component without error", () => {
 
   expect(component.length).toBe(1);
 });
-
-describe("App component has correct components inside of it", () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = setup();
-  });
-
-  test("contains Navigation component", () => {
-    expect(wrapper.contains(<Navigation />)).toBe(true);
-  });
-
-  test("contains CenterWrap component", () => {
-    const centerWrap = findByAttr(wrapper, "component-center-wrap");
-
-    expect(centerWrap.length).toBe(1);
-  });
-});

@@ -9,12 +9,13 @@ import Link from "../../components/link/link.component";
 
 const NotFound = () => {
   return (
-    <Wrapper>
+    <Wrapper data-test="component-not-found">
       <Logo style={{ width: "6rem" }} />
       <Header style={{ marginTop: "1rem" }}>Not found (404)</Header>
       <Text>Sorry, the page you are looking for does not exist.</Text>
 
       <Link
+        data-test="back-link"
         to="/"
         style={{
           textDecoration: "none",
