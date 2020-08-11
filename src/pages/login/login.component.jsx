@@ -43,8 +43,6 @@ const Login = () => {
     inputValues.emailOrCell.value,
   ]);
 
-  throw new Error();
-
   return (
     <Card data-test="component-login">
       <Card.Header data-test="component-header">

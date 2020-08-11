@@ -3,6 +3,11 @@ import React, { Component } from "react";
 // Styled Components
 import { Header, Wrapper } from "./error-boundary.styles";
 
+/**
+ * Component that wraps around other component and catches any error that they may have and display a fallback UI if there are any errors
+ * @function ErrorBoundary
+ * @returns {JSX}
+ */
 class ErrorBoundary extends Component {
   state = {
     hasError: false,
