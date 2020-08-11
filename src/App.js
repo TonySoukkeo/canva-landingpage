@@ -2,6 +2,9 @@ import React, { lazy, Suspense } from "react";
 import { Switch } from "react-router-dom";
 import Route from "./components/route/route.component";
 
+// Custo Components
+import ErrorBoundary from "./components/error-boundary/error-boundary.component";
+
 // Css styles
 import "./App.css";
 
@@ -21,14 +24,16 @@ const NotFound = lazy(() => import("./pages/not-found/not-found.component"));
 function App() {
   return (
     <Main data-test="component-app">
-      <Suspense fallback={<div>...loading</div>}>
-        <Switch>
-          <Route exact path="/" Component={GettingStarted} navigation />
-          <Route path="/login" Component={LoginContainer} navigation />
-          <Route exact path="/signup" Component={Signup} navigation />
-          <Route Component={NotFound} />
-        </Switch>
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<div>...loading</div>}>
+          <Switch>
+            <Route exact path="/" Component={GettingStarted} navigation />
+            <Route path="/login" Component={LoginContainer} navigation />
+            <Route exact path="/signup" Component={Signup} navigation />
+            <Route Component={NotFound} />
+          </Switch>
+        </Suspense>
+      </ErrorBoundary>
     </Main>
   );
 }
