@@ -1,5 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
+import { MemoryRouter } from "react-router-dom";
 
 // Component
 import Login from "./login.component";
@@ -13,11 +14,17 @@ import findByAttr from "../../util/findByAtrr";
  * @return {ShallowWrapper}
  */
 const setup = () => {
-  return shallow(<Login />);
+  return shallow(
+    <MemoryRouter initialEntries={["/login"]}>
+      <Login />
+    </MemoryRouter>
+  );
 };
 
 test("renders Login component without any errors", () => {
   const wrapper = setup();
+
+  console.log("wrapper", wrapper.find(Login).dive().debug());
   const component = findByAttr(wrapper, "component-login");
 
   expect(component.length).toBe(1);

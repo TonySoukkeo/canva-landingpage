@@ -39,8 +39,6 @@ const Login = () => {
 
   const { path } = useRouteMatch();
 
-  console.log("path", path);
-
   const checkEmail = useMemo(() => isEmail(inputValues.emailOrCell.value), [
     inputValues.emailOrCell.value,
   ]);

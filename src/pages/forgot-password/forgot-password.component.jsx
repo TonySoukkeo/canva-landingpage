@@ -16,7 +16,12 @@ const ForgotPassword = () => {
         <p>
           Don't worry, we'll send you a message to help you reset your password.
         </p>
-        <Form data-test="component-form">
+        <Form
+          data-test="component-form"
+          style={{
+            marginTop: "1rem",
+          }}
+        >
           <Form.InputGroup>
             <Form.Input
               data-test="component-input"
@@ -25,11 +30,23 @@ const ForgotPassword = () => {
             />
           </Form.InputGroup>
 
-          <Button data-test="component-button">Continue</Button>
+          <Button
+            data-test="component-button"
+            style={{
+              width: "100%",
+              borderStyle: "none",
+              backgroundColor: "#00c4cc",
+            }}
+            type="submit"
+          >
+            Continue
+          </Button>
         </Form>
       </Card.Body>
       <Card.Footer>
-        <Link data-test="back-button">Return to log in</Link>
+        <Link data-test="back-button" to="/login">
+          Return to log in
+        </Link>
       </Card.Footer>
     </Card>
   );

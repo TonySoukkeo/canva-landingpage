@@ -5,6 +5,11 @@ import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Login from "./login.component";
 import ForgotPassword from "../forgot-password/forgot-password.component";
 
+/**
+ * Component that points to path "/login" and renders either login page or forgot password
+ * @function LoginContainer
+ * @returns {JSX}
+ */
 const LoginContainer = () => {
   const { path } = useRouteMatch();
 
