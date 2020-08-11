@@ -27,10 +27,12 @@ const buttonStyle = {
 const Navigation = () => {
   return (
     <Header data-test="main-navigation">
-      <Logo to="/" />
+      <Logo data-test="main-logo" to="/" />
       <Nav>
         <List>
-          <ListItem data-test="home-link">Home</ListItem>
+          <ListItem data-test="home-link" active>
+            Home
+          </ListItem>
           <ListItem data-test="templates-link">Templates</ListItem>
           <ListItem data-test="discover-link">Discover</ListItem>
           <ListItem data-test="learn-link">Learn</ListItem>
