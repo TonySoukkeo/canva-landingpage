@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,iBAGE,QAAS,CACT,SAAU,CACV,qBACF,CAEA,UAEE,sCAAyC,CACzC,eACF","file":"main.095a29cd.chunk.css","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody,\nhtml {\n  font-family: Arial, Helvetica, sans-serif;\n  line-height: 1.6;\n}\n"]}

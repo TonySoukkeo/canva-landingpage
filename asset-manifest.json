@@ -1,0 +1,34 @@
+{
+  "files": {
+    "static/js/0.bb34bbda.chunk.js": "/canva-landingpage/static/js/0.bb34bbda.chunk.js",
+    "static/js/0.bb34bbda.chunk.js.map": "/canva-landingpage/static/js/0.bb34bbda.chunk.js.map",
+    "main.css": "/canva-landingpage/static/css/main.095a29cd.chunk.css",
+    "main.js": "/canva-landingpage/static/js/main.a91b2628.chunk.js",
+    "main.js.map": "/canva-landingpage/static/js/main.a91b2628.chunk.js.map",
+    "runtime-main.js": "/canva-landingpage/static/js/runtime-main.78f38944.js",
+    "runtime-main.js.map": "/canva-landingpage/static/js/runtime-main.78f38944.js.map",
+    "static/js/3.d566ca88.chunk.js": "/canva-landingpage/static/js/3.d566ca88.chunk.js",
+    "static/js/3.d566ca88.chunk.js.map": "/canva-landingpage/static/js/3.d566ca88.chunk.js.map",
+    "static/js/4.3f8b8ab2.chunk.js": "/canva-landingpage/static/js/4.3f8b8ab2.chunk.js",
+    "static/js/4.3f8b8ab2.chunk.js.map": "/canva-landingpage/static/js/4.3f8b8ab2.chunk.js.map",
+    "static/js/5.20467b2b.chunk.js": "/canva-landingpage/static/js/5.20467b2b.chunk.js",
+    "static/js/5.20467b2b.chunk.js.map": "/canva-landingpage/static/js/5.20467b2b.chunk.js.map",
+    "static/js/6.32e5f31b.chunk.js": "/canva-landingpage/static/js/6.32e5f31b.chunk.js",
+    "static/js/6.32e5f31b.chunk.js.map": "/canva-landingpage/static/js/6.32e5f31b.chunk.js.map",
+    "static/js/7.645295fe.chunk.js": "/canva-landingpage/static/js/7.645295fe.chunk.js",
+    "static/js/7.645295fe.chunk.js.map": "/canva-landingpage/static/js/7.645295fe.chunk.js.map",
+    "index.html": "/canva-landingpage/index.html",
+    "precache-manifest.8a2aaf7ca207c86c2f96e2d27fb1de2f.js": "/canva-landingpage/precache-manifest.8a2aaf7ca207c86c2f96e2d27fb1de2f.js",
+    "service-worker.js": "/canva-landingpage/service-worker.js",
+    "static/css/main.095a29cd.chunk.css.map": "/canva-landingpage/static/css/main.095a29cd.chunk.css.map",
+    "static/js/0.bb34bbda.chunk.js.LICENSE.txt": "/canva-landingpage/static/js/0.bb34bbda.chunk.js.LICENSE.txt",
+    "static/js/3.d566ca88.chunk.js.LICENSE.txt": "/canva-landingpage/static/js/3.d566ca88.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/canva-landingpage/static/media/logo.85610b14.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78f38944.js",
+    "static/js/3.d566ca88.chunk.js",
+    "static/css/main.095a29cd.chunk.css",
+    "static/js/main.a91b2628.chunk.js"
+  ]
+}
