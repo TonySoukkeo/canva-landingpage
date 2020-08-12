@@ -44,10 +44,13 @@ const Navigation = () => {
         <ButtonLink
           data-test="log-in-btn"
           to="/login"
-          marginRight="1rem"
-          borderColor="#fff"
-          borderWidth="1.6px"
-          {...buttonStyle}
+          style={{
+            ...buttonStyle,
+            marginRight: "1rem",
+            borderColor: "#fff",
+            borderWidth: "1.6px",
+            backgroundColor: "transparent",
+          }}
         >
           Log in
         </ButtonLink>

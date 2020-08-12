@@ -92,15 +92,16 @@ const Signup = () => {
           <Button
             data-test="signup-button"
             type="submit"
-            color="white"
-            backgroundColor="#00c4cc"
-            width="100%"
-            border="none"
             disabled={
               !checkEmail ||
               inputValues.password.value.length < 10 ||
               inputValues.name.value === ""
             }
+            style={{
+              color: "white",
+              width: "100%",
+              border: "none",
+            }}
           >
             <ButtonText>Get started, it's free!</ButtonText>
           </Button>
@@ -109,8 +110,9 @@ const Signup = () => {
 
       <Card.Footer>
         <p style={{ marginBottom: ".6rem" }}>
-          By signing up, you agree to Canva's <Link>Terms of Use</Link> and{" "}
-          <Link>Privacy Policy</Link>
+          By signing up, you agree to Canva's{" "}
+          <Link to="/signup">Terms of Use</Link> and{" "}
+          <Link to="/signup">Privacy Policy</Link>
         </p>
         <p>
           Already signed up?{" "}

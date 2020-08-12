@@ -2,25 +2,17 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 // Mixins
-const button = css(
-  ({
-    disabled,
-    backgroundColor = "transparent",
-    color = "#fff",
-    ...otherProps
-  }) => ({
-    cursor: disabled ? "not-allowed" : "pointer",
-    borderWidth: "1px",
-    borderStyle: "solid",
-    backgroundColor: disabled ? "rgba(14,19,24,.15)" : backgroundColor,
-    padding: "0.3rem 1rem",
-    borderRadius: ".3rem",
-    minHeight: "45px",
-    outline: "none",
-    color: disabled ? "rgba(14,19,24,.45)" : color,
-    ...otherProps,
-  })
-);
+const button = css(({ disabled }) => ({
+  cursor: disabled ? "not-allowed" : "pointer",
+  borderWidth: "1px",
+  borderStyle: "solid",
+  backgroundColor: disabled ? "rgba(14,19,24,.15)" : "#00c4cc",
+  padding: "0.3rem 1rem",
+  borderRadius: ".3rem",
+  minHeight: "45px",
+  outline: "none",
+  color: disabled ? "rgba(14,19,24,.45)" : "#fff",
+}));
 
 // Custom styled components
 

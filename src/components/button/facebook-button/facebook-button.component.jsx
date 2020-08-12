@@ -3,9 +3,19 @@ import React from "react";
 // Styled Components
 import { ButtonText, ActionButton } from "../button.styles";
 
-const GoogleButton = ({ placeholder = "Enter text here", ...props }) => {
+const GoogleButton = ({
+  placeholder = "Enter text here",
+  style: userStyles = {},
+  ...otherProps
+}) => {
   return (
-    <ActionButton {...props}>
+    <ActionButton
+      style={{
+        backgroundColor: "transparent",
+        ...userStyles,
+      }}
+      {...otherProps}
+    >
       <div>
         <svg
           data-test="facebook-icon"

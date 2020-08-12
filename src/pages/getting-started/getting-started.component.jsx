@@ -57,15 +57,23 @@ const GettingStarted = () => {
         <GoogleButton
           data-test="google-signup-btn"
           placeholder="Sign up with Google"
+          style={{
+            backgroundColor: "transparent",
+          }}
         />
         <FacebookButton
           data-test="facebook-signup-btn"
           placeholder="Sign up with Facebook"
+          style={{
+            backgroundColor: "transparent",
+          }}
         />
         <ButtonLink
           data-test="email-signup-btn"
           to="/signup"
-          {...emailSignUpButtonStyles}
+          style={{
+            ...emailSignUpButtonStyles,
+          }}
         >
           Sign up with email
         </ButtonLink>

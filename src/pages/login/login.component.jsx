@@ -94,10 +94,11 @@ const Login = () => {
           <Button
             data-test="login-button"
             type="submit"
-            backgroundColor="#00c4cc"
-            borderStyle="none"
-            width="100%"
             disabled={!checkEmail || inputValues.password.value.length < 10}
+            style={{
+              borderStyle: "none",
+              width: "100%",
+            }}
           >
             <ButtonText>Log in</ButtonText>
           </Button>
