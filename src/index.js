@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="https://tonysoukkeo.github.io/canva-landingpage/">
+    <Router basename="/canva-landingpage/">
       <App />
     </Router>
   </React.StrictMode>,
