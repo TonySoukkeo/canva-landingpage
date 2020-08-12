@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9828aec80a4a2cfca46d086de630bcc9",
+    "revision": "5c38c6fd2e14f08e4194d0ad2606f526",
     "url": "/canva-landingpage/index.html"
   },
   {
-    "revision": "e9ae31971bf092dbd34a",
+    "revision": "23f6f61cc2ae5da57fb5",
     "url": "/canva-landingpage/static/css/main.095a29cd.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canva-landingpage/static/js/7.645295fe.chunk.js"
   },
   {
-    "revision": "e9ae31971bf092dbd34a",
-    "url": "/canva-landingpage/static/js/main.0b918678.chunk.js"
+    "revision": "23f6f61cc2ae5da57fb5",
+    "url": "/canva-landingpage/static/js/main.2ffc340f.chunk.js"
   },
   {
     "revision": "f6f1f9fc90bd0fc9c239",
